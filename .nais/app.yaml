@@ -6,7 +6,7 @@ metadata:
 spec:
   ingresses:
     - https://andreas-tester-nais.sandbox.test-nais.cloud.nais.io
-  image: { { image } }
+  image: {{image}}
   port: 8080
   ttl: 3h
   replicas:
