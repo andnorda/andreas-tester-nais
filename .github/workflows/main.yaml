@@ -22,6 +22,7 @@ jobs:
       - name: Deploy to NAIS
         uses: nais/deploy/actions/deploy@v2
         env:
+          DEPLOY_SERVER: deploy.test-nais.cloud.nais.io:443
           CLUSTER: sandbox # Replace
           RESOURCE: .nais/app.yaml # This points to the file we created in the previous step
           VAR: image=${{ steps.docker-build-push.outputs.image }}
