@@ -2,11 +2,11 @@ apiVersion: nais.io/v1alpha1
 kind: Application
 metadata:
   name: andreas-tester-nais
-  namespace: andreas-tester-nais
+  namespace: andreas-tester-nais-2
 spec:
   ingresses:
     - https://andreas-tester-nais.sandbox.test-nais.cloud.nais.io
-  image: {{image}}
+  image: { { image } }
   port: 8080
   ttl: 3h
   replicas:
